@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+	<head>
+		<title>Worth Weight in Gold</title>
+		<link rel = "stylesheet" type = "text/css" herf = "{% static 'gold/style.css' %}">
+	</head>
+	<body>
+		<div class ="gold">
+			<h2>Weight/Gold Conversion</h2>
+			<form>
+				<label>Weight(lbs)</label>
+				<input type = "text" id ="tx"/>
+				<button type="button" onclick="fetch()"> convert </button>
+			</form>
+			<h2 id = "res">$0</h2>
+		</div>
+
+<script  src="{% static 'gold/quandl.js' %}"></script>
+
+	</body>
+
+</html>
